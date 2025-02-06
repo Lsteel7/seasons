@@ -1,0 +1,19 @@
+﻿<Window x:Class="Времена_года.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Времена_года"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Выбери время года" FontSize="20" Margin="10,10,0,0"/>
+        <ComboBox x:Name="season" SelectionChanged="Season_SelectionChanged" Background="#FF14A480" HorizontalContentAlignment="Center" FontSize="30" Height="50" Margin="10,40,10,300">
+            <ComboBoxItem Content="Весна" HorizontalAlignment="Center" FontSize="30"></ComboBoxItem>
+            <ComboBoxItem Content="Лето" HorizontalAlignment="Center" FontSize="30"></ComboBoxItem>
+            <ComboBoxItem Content="Осень" HorizontalAlignment="Center" FontSize="30"></ComboBoxItem>
+            <ComboBoxItem Content="Зима" HorizontalAlignment="Center" FontSize="30"></ComboBoxItem>
+        </ComboBox>
+        <Image x:Name="picture" Margin="0,110,0,0"/>
+    </Grid>
+</Window>
